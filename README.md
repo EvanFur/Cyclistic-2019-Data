@@ -19,5 +19,5 @@ The data has been made available by Motivate International Inc. and is available
 The data will showcase a year of Cyclistic user activity an hopefully paint a clear picture of the differences between its users.
 
 ## Process 
-The data was stored on an SSD and analysed using R Studio
+The data was stored on an SSD and analysed using R Studio. I chose R studio because it was straight forward enough to install and has a pleasing user interface. I also chose to use R because I was analysing an entire year of data and I wanted to be able to use every piece of that data, rather than choosing only a small sample. R has the capability to both clean and viisualise data which is yet another reason to choose it. 
 
