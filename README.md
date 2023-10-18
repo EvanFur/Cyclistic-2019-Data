@@ -26,6 +26,13 @@ In order to collate the data later on, I began by ensuring that each file used t
 
 I combined the 4 dataframes into 1 large data frame, and then refined that dataframe to remove any trips that were taken by cycistic themselves and any trips that had negative run time. 
 
-After this I generated 2 visualisations. 
+After this I generated 2 visualisations:
 
 ## Number of Rides per Customer Type
+
+![number_of_rides](https://github.com/EvanFur/Cyclistic-2019-Data/assets/148148604/cd17b1ad-efbb-4567-8bc3-f44287fcd547)
+
+## Average Duration
+
+
+
