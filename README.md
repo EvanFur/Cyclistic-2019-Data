@@ -34,5 +34,8 @@ After this I generated 2 visualisations:
 
 ## Average Duration
 
+![average_duration](https://github.com/EvanFur/Cyclistic-2019-Data/assets/148148604/94176f4c-b124-4091-b287-751085cba55b)
+
+
 
 
