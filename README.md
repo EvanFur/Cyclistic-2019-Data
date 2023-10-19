@@ -34,7 +34,7 @@ After this I generated 3 visualisations:
 
 ## Average Duration
 
-
+![average_duration](https://github.com/EvanFur/Cyclistic-2019-Data/assets/148148604/3c89d8a8-899d-4a23-a8f3-6c18489fc618)
 
 
 ## Number of Rides Monthly Breakdown
