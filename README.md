@@ -28,6 +28,8 @@ After doing a lot of tidying up of the data, I combined the 4 dataframes into 1 
 
 After this I generated 3 visualisations:
 
+[You can check out my code here](https://github.com/EvanFur/Cyclistic-2019-Data/blob/main/case_study_bike_trips.R)
+
 ## Number of Rides per Customer Type
 
 ![number_of_rides](https://github.com/EvanFur/Cyclistic-2019-Data/assets/148148604/cd17b1ad-efbb-4567-8bc3-f44287fcd547)
