@@ -50,13 +50,18 @@ q2_2019 <-  mutate(q2_2019, trip_id = as.character(trip_id)
 q1_2019 <-  mutate(q1_2019, trip_id =  as.character(trip_id)
                    ,bikeid = as.character(bikeid))
 
+## Change column types to match the other quarters
+
 q1_2019 <- mutate(q1_2019, start_time = as.POSIXct(start_time))
 q1_2019 <- mutate(q1_2019, end_time = as.POSIXct(start_time))
 q1_2019 <- mutate(q1_2019, tripduration = as.numeric(tripduration))
 q1_2019 <- na.omit(q1_2019)
 
+## Combine all the quarters together
 
 all_trips <- bind_rows(q1_2019, q2_2019, q3_2019, q4_2019)
+
+## Remove the birthyear and gender columns as these aren't relevant
 
 all_trips <- all_trips %>%  
   select(-c(birthyear, gender))
@@ -68,8 +73,11 @@ head(all_trips)
 str(all_trips)
 summary(all_trips)
 
+## make sure the usertypes are the same throughout the year
+
 categories <- unique(all_trips$usertype)
 
+## add date, day, month, year, day_of_week columns
 
 all_trips$date <- as.Date(all_trips$start_time) 
 all_trips$month <- format(as.Date(all_trips$date), "%m")
@@ -77,14 +85,18 @@ all_trips$day <- format(as.Date(all_trips$date), "%d")
 all_trips$year <- format(as.Date(all_trips$date), "%Y")
 all_trips$day_of_week <- format(as.Date(all_trips$date), "%A")
 
-
+## make tripduration numeric
 
 is.factor(all_trips$tripduration)
 all_trips$tripduration <- as.numeric(as.character(all_trips$tripduration))
 is.numeric(all_trips$tripduration)
 
+## remove trips from "HQ" and trips that have negative run time
+
 all_trips_v2 <- all_trips[!(all_trips$from_station_name
                             == "HQ QR" | all_trips$tripduration < 0),]
+
+## remove NA 
 
 all_trips_v2 <- na.omit(all_trips_v2)
 aggregate(all_trips_v2$tripduration ~ all_trips_v2$usertype, FUN = mean)
@@ -93,6 +105,8 @@ aggregate(all_trips_v2$tripduration ~ all_trips_v2$usertype, FUN = max)
 aggregate(all_trips_v2$tripduration ~ all_trips_v2$usertype, FUN = min)
 
 aggregate(all_trips_v2$tripduration ~ all_trips_v2$usertype + all_trips_v2$day_of_week, FUN = mean)
+
+## order days of the week
 
 all_trips_v2$day_of_week <- ordered(all_trips_v2$day_of_week
                                     , levels=c("Sunday"
@@ -105,6 +119,7 @@ all_trips_v2$day_of_week <- ordered(all_trips_v2$day_of_week
 
 aggregate(all_trips_v2$tripduration ~ all_trips_v2$usertype + all_trips_v2$day_of_week, FUN = mean)
 
+## create plots and remove scientific notation
 
 all_trips_v2 %>%
   mutate(weekday = wday(start_time, label = TRUE)) %>% 
