@@ -22,9 +22,9 @@ The data will showcase a year of Cyclistic user activity an hopefully paint a cl
 The data was stored on an SSD and analysed using R Studio. I chose R studio because it was straight forward enough to install and has a pleasing user interface. I also chose to use R because I was analysing an entire year of data and I wanted to be able to use every piece of that data, rather than choosing only a small sample. R has the capability to both clean and visualise data which is yet another reason to choose it. 
 
 
-In order to collate the data later on, I began by ensuring that each file used the same schema. I created 4 data frames, 1 for each quarter of 2019, and made sure that each of these data frames used the same schema. - This makes it seem like this worked flawlessly for me the first time. I promise you this was lots of trial and error -
+In order to collate the data later on, I began by creating 4 data frames, 1 for each quarter of 2019, and made sure that each of these data frames used the same schema. - This makes it seem like this worked flawlessly for me the first time. I promise you this was lots of trial and error -
 
-I combined the 4 dataframes into 1 large data frame, and then refined that dataframe to remove any trips that were taken by cycistic themselves and any trips that had negative run time. 
+After doing a lot of tidying up of the data, I combined the 4 dataframes into 1 large data frame, and then refined that dataframe to remove any trips that were taken by cycistic themselves and any trips that had negative run time. 
 
 After this I generated 2 visualisations:
 
