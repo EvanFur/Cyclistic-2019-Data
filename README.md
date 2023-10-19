@@ -26,7 +26,7 @@ In order to collate the data later on, I began by creating 4 data frames, 1 for 
 
 After doing a lot of tidying up of the data, I combined the 4 dataframes into 1 large data frame, and then refined that dataframe to remove any trips that were taken by cycistic themselves and any trips that had negative run time. 
 
-After this I generated 2 visualisations:
+After this I generated 3 visualisations:
 
 ## Number of Rides per Customer Type
 
@@ -34,8 +34,11 @@ After this I generated 2 visualisations:
 
 ## Average Duration
 
-![average_duration](https://github.com/EvanFur/Cyclistic-2019-Data/assets/148148604/94176f4c-b124-4091-b287-751085cba55b)
 
 
+
+## Number of Rides Monthly Breakdown
+
+![number_of_rides_monthly](https://github.com/EvanFur/Cyclistic-2019-Data/assets/148148604/4142ef86-6763-4934-b858-41ef17927deb)
 
 
