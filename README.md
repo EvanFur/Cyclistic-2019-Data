@@ -63,8 +63,8 @@ From our analysis we can see that May to October would have the highest potentia
 
 Customers are primarily using Cyclistic at the weekends. They likely don't feel that it is necessary to purchase a subscription because of their limited usage. In this case there are 2 options. We either need to convince them that, even in their limited usage, a Cyclistic subscription is still of value or we need to convince them to use Cyclistic during the week. 
 
-For the first option, my suggestion would be to gather data to showcase the cost to an average non-subscriber vs a subscriber with similar usage and form a marketing campaign to highlight the benefits.
+For the first option, my suggestion would be to gather data to showcase the cost to an average non-subscriber vs a subscriber with similar usage, and form a marketing campaign to highlight the benefits.
 
-For the second option, a campaign could be formed around the different uses for Cyclistic, i.e commuting, quick trips for groceries, a greener alternative, anything that removes them from the mindset that Cyclistic is only for weekend use. 
+For the second option, a campaign could be formed around the different uses for Cyclistic, i.e commuting, quick trips for groceries, a greener alternative to car travel, anything that removes them from the mindset that Cyclistic is only for weekend  use. 
 
 
